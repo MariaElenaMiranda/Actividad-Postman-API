@@ -1,0 +1,14 @@
+<div class="border bg-sky-100">
+  <h1 class="text-center">Productos - María Elena Miranda</h1>
+  <div>
+    <form action="">
+      <label for="">Id del producto:</label>
+      <input (input)="onSearch($event)" type="number" name="id-product" id="">
+    </form>
+  </div>
+  <div class="max-w-xl grid grid-cols-1 gap-4">
+    @if(product$ | async; as product) {
+      <app-product-card [product]="product"/>
+    }
+  </div>
+</div>
