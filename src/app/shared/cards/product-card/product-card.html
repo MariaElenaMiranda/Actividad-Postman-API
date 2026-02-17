@@ -1,0 +1,10 @@
+<div class="border m-5 p-5 bg-gray-200 rounded-4xl">
+  <h2 class="text-center font-bold text-2xl">{{product().title}}</h2>
+  <div><img [src]="product().images[0]" alt=""></div>
+  <p>{{product().description}}</p>
+  <div>
+    <p class="font-bold">Price: {{product().price}} €</p>
+    <p>Rating: {{product().rating}}</p>
+    <p>Stock: {{product().stock}} pcs.</p>
+  </div>
+</div>
