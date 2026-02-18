@@ -1,10 +1,12 @@
-<div class="border m-5 p-5 bg-gray-200 rounded-4xl">
-  <h2 class="text-center font-bold text-2xl">{{product().title}}</h2>
+<div class="m-5 p-5 bg-gray-200 rounded-4xl">
+  <h2 class="text-center text-2xl tracking-widest text-sky-900 font-light">{{product().title}}</h2>
   <div><img [src]="product().images[0]" alt=""></div>
-  <p>{{product().description}}</p>
-  <div>
-    <p class="font-bold">Price: {{product().price}} €</p>
-    <p>Rating: {{product().rating}}</p>
-    <p>Stock: {{product().stock}} pcs.</p>
+  <p class="text-justify px-5">{{product().description}}</p>
+  <br>
+  <div class="text-center">
+    <p class="font-bold text-xl">Price: {{product().price}} €</p>
+    <br>
+    <p class="font-light tracking-widest">Rating: {{product().rating}}</p>
+    <p class="font-light tracking-widest">Stock: {{product().stock}} pcs.</p>
   </div>
 </div>
